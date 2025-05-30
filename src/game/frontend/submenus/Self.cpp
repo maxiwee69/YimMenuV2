@@ -1,3 +1,4 @@
+#include <memory> // for std::make_shared
 #include "Self.hpp"
 
 #include "core/util/Joaat.hpp"
@@ -27,7 +28,8 @@ namespace YimMenu::Submenus
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("formatmoney"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("mobileradio"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("keepplayerclean"_J));
-
+       	globalsGroup->AddItem(std::make_shared<BoolCommandItem>("noparachutes"_J));
+		
 		toolsGroup->AddItem(std::make_shared<CommandItem>("skipcutscene"_J));
 		toolsGroup->AddItem(std::make_shared<CommandItem>("skipconversation"_J));
 		toolsGroup->AddItem(std::make_shared<CommandItem>("suicide"_J));
@@ -78,10 +80,14 @@ namespace YimMenu::Submenus
 		weaponsAimbotGroup->AddItem(std::make_shared<BoolCommandItem>("aimbot"_J));
 		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbotaimforhead"_J)));
 		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbottargetdrivers"_J)));
+		weaponsAimbotGroup->AddItem(std::make_shared<BoolCommandItem>("silentaim"_J));
+		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargetpolice"_J)));
+		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargetplayers"_J)));
+		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargeteveryone"_J)));
 
-		weapons->AddItem(weaponsGlobalsGroup);
-		weapons->AddItem(weaponsAimbotGroup);
-		AddCategory(std::move(weapons));
+        weapons->AddItem(weaponsGlobalsGroup);
+        weapons->AddItem(weaponsAimbotGroup);
+        AddCategory(std::move(weapons));
 
 		auto outfitEditorCategory = YimMenu::CreateOutfitsMenu();
 		AddCategory(std::move(outfitEditorCategory));

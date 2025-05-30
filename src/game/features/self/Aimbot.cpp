@@ -1,5 +1,10 @@
 #include "core/commands/BoolCommand.hpp"
+#include "core/commands/LoopedCommand.hpp"
 #include "game/pointers/Pointers.hpp"
+#include "game/backend/Self.hpp"
+#include "game/gta/Natives.hpp"
+#include "core/util/Math.hpp"
+#include "types/pad/ControllerInputs.hpp"
 
 namespace YimMenu::Features
 {
@@ -49,7 +54,8 @@ namespace YimMenu::Features
 			Pointers.ShouldAllowDriverLockOnPatch->Restore();
 		}
 	};
-
+	
+	// Static instances of the aimbot classes
 	static Aimbot _Aimbot{"aimbot", "Aimbot", "Locks on to enemies and other players"};
 	static AimbotAimForHead _AimbotAimForHead{"aimbotaimforhead", "Aim For Head", "Targets the head when locking on to enemies and other players"};
 	static AimbotTargetDrivers _AimbotTargetDrivers{"aimbottargetdrivers", "Target Drivers", "Allows aimbot to lock on to enemies and other players in vehicles"};
