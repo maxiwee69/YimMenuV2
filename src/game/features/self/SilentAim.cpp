@@ -42,18 +42,17 @@ namespace YimMenu::Features
 			bool isAttackPressed = PAD::IS_DISABLED_CONTROL_PRESSED(0, (int)ControllerInputs::INPUT_ATTACK);
 			
 			Ped target{Ped(0)};
+		if (isAttackPressed)
+		{
+			target = GetTarget(); 
+		}
 
-			if (isAttackPressed)
-			{
-				target = GetTarget(); 
-			}
-
-			if (isAttackPressed && target && target.IsValid())
-			{
-				Vector3 target_head_pos = target.GetBonePosition(31086); // SKEL_Head
-				PED::SET_PED_SHOOTS_AT_COORD(selfPed.GetHandle(), target_head_pos.x, target_head_pos.y, target_head_pos.z, true);
-				m_isShooting = true;
-			}
+		if (isAttackPressed && target && target.IsValid())
+		{
+			Vector3 target_head_pos = target.GetBonePosition(31086); // SKEL_Head
+			PED::SET_PED_SHOOTS_AT_COORD(selfPed.GetHandle(), target_head_pos.x, target_head_pos.y, target_head_pos.z, true);
+			m_isShooting = true;
+		}
 			else
 			{
 				if (m_isShooting)
