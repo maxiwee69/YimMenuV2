@@ -45,5 +45,6 @@ namespace YimMenu::Submenus
 		AddCategory(BuildLSCMenu());
 		AddCategory(BuildVehicleEditorMenu());
 		AddCategory(BuildSavedVehiclesMenu());
+		AddCategory(BuildLSCMenu());
 	}
 }
