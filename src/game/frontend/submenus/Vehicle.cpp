@@ -1,6 +1,7 @@
 #include "Vehicle.hpp"
 #include "game/frontend/items/Items.hpp"
 #include "game/frontend/submenus/Vehicle/SpawnVehicle.hpp"
+#include "game/frontend/submenus/Vehicle/LSC.hpp"
 #include "Vehicle/VehicleEditor.hpp"
 #include "Vehicle/SavedVehicles.hpp"
 
@@ -41,6 +42,7 @@ namespace YimMenu::Submenus
 
 		AddCategory(std::move(main));
 		AddCategory(BuildSpawnVehicleMenu());
+		AddCategory(BuildLSCMenu());
 		AddCategory(BuildVehicleEditorMenu());
 		AddCategory(BuildSavedVehiclesMenu());
 	}
