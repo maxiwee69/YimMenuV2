@@ -42,6 +42,8 @@ namespace YimMenu::Submenus
 
 		AddCategory(std::move(main));
 		AddCategory(BuildSpawnVehicleMenu());
+		AddCategory(BuildVehicleEditorMenu());
+		AddCategory(BuildSavedVehiclesMenu());
 		AddCategory(BuildLSCMenu());
 		AddCategory(BuildVehicleEditorMenu());
 		AddCategory(BuildSavedVehiclesMenu());
