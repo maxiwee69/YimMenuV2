@@ -45,8 +45,29 @@ namespace YimMenu
 
 			    ImGui::PushFont(Menu::Font::g_DefaultFont);
 			    ImGui::PushStyleColor(ImGuiCol_WindowBg, ImU32(ImColor(15, 15, 15)));
+			    ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 4.0f);
 
-			    UIManager::Draw();
+			    ImGui::SetNextWindowSize(ImVec2((*Pointers.ScreenResX / 2.5), (*Pointers.ScreenResY / 2.5)), ImGuiCond_Once);
+			    if (ImGui::Begin("YimMenuV2", nullptr, ImGuiWindowFlags_None))
+			    {
+				    // TODO: should we just remove unload?
+				    ImGui::BeginDisabled(*Pointers.IsSessionStarted || ModuleMgr.IsManualMapped());
+				    if (ImGui::Button("Unload", ImVec2(120, 0)))
+				    {
+					    if (true)
+					    {
+						    FiberPool::Push([] {
+							    Commands::Shutdown();
+							    g_Running = false;
+						    });
+					    }
+					    else
+					    {
+						    g_Running = false;
+					    }
+				    }
+				    ImGui::EndDisabled();
+
 			    UIManager::Draw();
 
 			    ImGui::PopStyleVar();
@@ -75,13 +96,10 @@ namespace YimMenu
 		style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.40f, 0.30f, 0.50f, 0.75f);
 		style.Colors[ImGuiCol_FrameBgActive] = ImVec4(0.45f, 0.35f, 0.60f, 0.85f);
 
-		style.Colors[ImGuiCol_Button] = ImVec4(0.40f, 0.30f, 0.50f, 1.00f);
-		style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.50f, 0.40f, 0.60f, 1.00f);
-		style.Colors[ImGuiCol_ButtonActive] = ImVec4(0.60f, 0.45f, 0.70f, 1.00f);
+		style.Colors[ImGuiCol_Button] = ImVec4(0.40f, 0.25f, 0.50f, 1.00f);
+		style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.50f, 0.35f, 0.60f, 1.00f);
+	 style.Colors[ImGuiCol_ButtonActive]  = ImVec4(0.60f, 0.45f, 0.75f, 1.00f);
 
-		style.Colors[ImGuiCol_TitleBg] = ImVec4(0.06f, 0.06f, 0.07f, 1.00f);
-		style.Colors[ImGuiCol_TitleBgActive] = ImVec4(0.09f, 0.09f, 0.11f, 1.00f);
-		style.Colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.04f, 0.04f, 0.05f, 1.00f);
 		style.Colors[ImGuiCol_TitleBg] = ImVec4(0.06f, 0.06f, 0.07f, 1.00f);
 		style.Colors[ImGuiCol_TitleBgActive] = ImVec4(0.09f, 0.09f, 0.11f, 1.00f);
 		style.Colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.04f, 0.04f, 0.05f, 1.00f);
