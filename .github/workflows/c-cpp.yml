@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "enhanced" ]
+  pull_request:
+    branches: [ "enhanced" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: mkdir build
+    - run: mkdir build & cd build
+    - name: cmake ..
+    - run: cmake ..
+    - name: cd ..
+    - run: cd ..
+    - name: cmake --build build/ --config Release
+    - run: cmake --build build/ --config Release
