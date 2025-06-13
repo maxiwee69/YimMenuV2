@@ -33,8 +33,7 @@ namespace YimMenu::Features
                 ped.SetAccuracy(m_originalAccuracy);
             }
             m_initialized = false;
-        }
-    };
+        }    };
 
     static NoSpread _NoSpread{"nospread", "No Spread", "Eliminates bullet spread when shooting"};
 }
