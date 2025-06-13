@@ -11,5 +11,6 @@ namespace YimMenu
 	public:
 		LoopedCommand(std::string name, std::string label, std::string description);
 		void Tick();
+		friend class Commands;
 	};
 }

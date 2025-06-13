@@ -60,10 +60,28 @@ namespace YimMenu::Submenus
 		main->AddItem(globalsGroup);
 		main->AddItem(toolsGroup);
 		main->AddItem(wantedGroup);
-		main->AddItem(movementGroup);
+		main->AddItem(movementGroup);	
 		AddCategory(std::move(main));
 
-		AddCategory(BuildWeaponsMenu());
+		auto weapons             = std::make_shared<Category>("Weapons");
+		auto weaponsGlobalsGroup = std::make_shared<Group>("Globals");
+		auto weaponsAimbotGroup  = std::make_shared<Group>("Aimbot", 1);
+
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteammo"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteclip"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("rapidfire"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("nospread"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteparachutes"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("ExplosiveAmmo"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<CommandItem>("giveallweapons"_J));
+
+		weaponsAimbotGroup->AddItem(std::make_shared<BoolCommandItem>("aimbot"_J));
+		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbotaimforhead"_J)));
+		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbottargetdrivers"_J)));
+
+		weapons->AddItem(weaponsGlobalsGroup);
+		weapons->AddItem(weaponsAimbotGroup);
+		AddCategory(std::move(weapons));
 
 		auto outfitEditorCategory = YimMenu::CreateOutfitsMenu();
 		AddCategory(std::move(outfitEditorCategory));
