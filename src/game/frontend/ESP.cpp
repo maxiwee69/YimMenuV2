@@ -314,8 +314,7 @@ namespace YimMenu
 
 		if (const auto drawList = ImGui::GetBackgroundDrawList())
 		{
-			// lots of race conditions and other things make this particularly crash-prone
-			__try
+			try
 			{
 				if (Features::_ESPDrawPlayers.GetState())
 				{
@@ -341,7 +340,7 @@ namespace YimMenu
 					}
 				}
 			}
-			__except (EXCEPTION_EXECUTE_HANDLER)
+			catch (...)
 			{
 			}
 		}

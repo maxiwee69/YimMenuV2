@@ -170,11 +170,13 @@ namespace YimMenu::Submenus
 		auto weaponsGlobalsGroup = std::make_shared<Group>("Globals");
 		auto weaponsToolsGroup = std::make_shared<Group>("Tools", 1);
 		auto weaponsAmmuNationGroup = std::make_shared<Group>("Ammu-Nation");
-		auto weaponsAimbotGroup = std::make_shared<Group>("Aimbot", 1);
+		auto weaponsAimbotGroup     = std::make_shared<Group>("Aimbot", 1);
+		auto weaponsSilentGroup     = std::make_shared<Group>("Silent Aim", 1);
 
 		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteammo"_J));
 		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteclip"_J));
 		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("rapidfire"_J));
+		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("nospread"_J));
 		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("infiniteparachutes"_J));
 		weaponsGlobalsGroup->AddItem(std::make_shared<BoolCommandItem>("ExplosiveAmmo"_J));
 		weaponsGlobalsGroup->AddItem(std::make_shared<ConditionalItem>("ExplosiveAmmo"_J, std::make_shared<ListCommandItem>("selectedexplosion"_J)));
@@ -198,10 +200,16 @@ namespace YimMenu::Submenus
 		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbottargetdrivers"_J)));
 		weaponsAimbotGroup->AddItem(std::make_shared<ConditionalItem>("aimbot"_J, std::make_shared<BoolCommandItem>("aimbotreleasedeadped"_J)));
 
+		weaponsSilentGroup->AddItem(std::make_shared<BoolCommandItem>("silentaim"_J));
+		weaponsSilentGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargetpolice"_J)));
+		weaponsSilentGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargetplayers"_J)));
+		weaponsSilentGroup->AddItem(std::make_shared<ConditionalItem>("silentaim"_J, std::make_shared<BoolCommandItem>("silentaimtargeteveryone"_J)));
+
 		weapons->AddItem(weaponsGlobalsGroup);
 		weapons->AddItem(weaponsToolsGroup);
 		weapons->AddItem(weaponsAmmuNationGroup);
 		weapons->AddItem(weaponsAimbotGroup);
+		weapons->AddItem(weaponsSilentGroup);
 		return weapons;
 	}
 }

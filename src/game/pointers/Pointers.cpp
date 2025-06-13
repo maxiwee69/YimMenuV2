@@ -8,7 +8,6 @@
 
 namespace YimMenu
 {
-	// on some cracked game builds
 	static bool IsSocialClubNeverGoingToLoad()
 	{
 		return Pointers.ScriptThreads && Pointers.ScriptThreads->size() != 0;

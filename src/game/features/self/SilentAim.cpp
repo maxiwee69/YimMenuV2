@@ -208,8 +208,7 @@ namespace YimMenu::Features
 				}
 			}
 			return bestTarget;
-		}
-	};
+		}	};
 
-	static SilentAim _SilentAim{};
+	static SilentAim _SilentAim;
 }
