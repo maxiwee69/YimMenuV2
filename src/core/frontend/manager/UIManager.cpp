@@ -1,6 +1,8 @@
 #include "UIManager.hpp"
 #include "game/pointers/Pointers.hpp"
 #include "game/frontend/Menu.hpp"
+#include "game/pointers/Pointers.hpp"
+#include "game/frontend/Menu.hpp"
 
 namespace YimMenu
 {
@@ -62,6 +64,49 @@ namespace YimMenu
 					m_ShowContentWindow = !m_ShowContentWindow;
 				}
 				else
+		ImGuiIO& io = ImGui::GetIO();
+		ImDrawList* drawList = ImGui::GetBackgroundDrawList();
+
+		float bubbleSpacing = 75.0f;
+		float bubbleSize = 55.0f;
+		float bgSize = 70.0f;
+		float rounding = 8.0f;
+		ImVec2 basePos((*Pointers.ScreenResX / 2.0f) - (bubbleSpacing * m_Submenus.size() / 2.0f), 80.0f);
+
+		ImGui::SetNextWindowPos(ImVec2(0, 0));
+		ImGui::SetNextWindowSize(io.DisplaySize);
+		ImGui::Begin("##BubbleInputWindow", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoBringToFrontOnFocus);
+
+		for (size_t i = 0; i < m_Submenus.size(); ++i)
+		{
+			auto& submenu = m_Submenus[i];
+			ImVec2 bubblePos(basePos.x + i * bubbleSpacing, basePos.y + 2);
+			ImVec2 center(bubblePos.x + bubbleSize / 2.0f, bubblePos.y + bubbleSize / 2.0f);
+
+			ImGui::SetCursorScreenPos(bubblePos);
+			ImGui::PushID(static_cast<int>(i));
+
+			ImVec2 bgPos = ImVec2(center.x - bgSize / 2.0f, center.y - bgSize / 2.0f);
+			drawList->AddRectFilled(bgPos, ImVec2(bgPos.x + bgSize, bgPos.y + bgSize), IM_COL32(10, 10, 10, 255), rounding);
+
+			drawList->AddRect(bgPos, ImVec2(bgPos.x + bgSize, bgPos.y + bgSize), IM_COL32(192, 192, 192, 32), rounding, ImDrawFlags_None, 1.0f);
+
+			ImU32 bubbleColor = IM_COL32(25, 25, 31, 255);
+			ImU32 hoverColor = IM_COL32(46, 46, 51, 255);
+			ImGui::InvisibleButton("##Bubble", ImVec2(bubbleSize, bubbleSize));
+			bool hovered = ImGui::IsItemHovered();
+			bool clicked = ImGui::IsItemClicked();
+			drawList->AddRectFilled(bubblePos, ImVec2(bubblePos.x + bubbleSize, bubblePos.y + bubbleSize), hovered ? hoverColor : bubbleColor, rounding);
+
+			drawList->AddRect(bubblePos, ImVec2(bubblePos.x + bubbleSize, bubblePos.y + bubbleSize), IM_COL32(192, 192, 192, 16), rounding, ImDrawFlags_None, 1.0f);
+
+			if (clicked)
+			{
+				if (submenu == m_ActiveSubmenu)
+				{
+					m_ShowContentWindow = !m_ShowContentWindow;
+				}
+				else
 				{
 					SetActiveSubmenu(submenu);
 					m_ShowContentWindow = true;
@@ -69,8 +114,8 @@ namespace YimMenu
 			}
 
 			ImU32 defaultIconColor = IM_COL32(255, 255, 255, 255);
-			ImU32 activeIconColor = IM_COL32(46, 204, 113, 255); // GTA green
-			ImU32 hoveredIconColor = IM_COL32(36, 174, 93, 255); // Darker hover
+			ImU32 activeIconColor = IM_COL32(120, 90, 160, 255);
+			ImU32 hoveredIconColor = IM_COL32(90, 70, 120, 255);
 
 			ImU32 iconColor = submenu == m_ActiveSubmenu ? activeIconColor : (ImGui::IsItemHovered() ? hoveredIconColor : defaultIconColor);
 
@@ -81,8 +126,8 @@ namespace YimMenu
 			ImGui::PopFont();
 
 			ImU32 defaultTextColor = IM_COL32(255, 255, 255, 255);
-			ImU32 activeTextColor = IM_COL32(46, 204, 113, 255); // GTA green
-			ImU32 hoveredTextColor = IM_COL32(36, 174, 93, 255); // Darker hover
+			ImU32 activeTextColor = IM_COL32(120, 90, 160, 255);
+			ImU32 hoveredTextColor = IM_COL32(90, 70, 120, 255);
 
 			ImU32 textColor = submenu == m_ActiveSubmenu ? activeTextColor : (ImGui::IsItemHovered() ? hoveredTextColor : defaultTextColor);
 
@@ -121,6 +166,18 @@ namespace YimMenu
 				}
 				ImGui::EndChild();
 
+				if (ImGui::BeginChild("##options", ImVec2(0, 0), true))
+				{
+					if (m_OptionsFont)
+						ImGui::PushFont(m_OptionsFont);
+					m_ActiveSubmenu->Draw();
+					if (m_OptionsFont)
+						ImGui::PopFont();
+				}
+				ImGui::EndChild();
+			}
+			ImGui::End();
+		}
 				if (ImGui::BeginChild("##options", ImVec2(0, 0), true))
 				{
 					if (m_OptionsFont)

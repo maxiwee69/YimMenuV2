@@ -2,14 +2,14 @@
 #include "game/backend/Self.hpp"
 #include "game/gta/Pools.hpp"
 #include "types/fx/ExplosionType.hpp"
+#include "types/fx/ExplosionType.hpp"
 #include <game/gta/Natives.hpp>
 #include "core/commands/ListCommand.hpp"
 #include "core/commands/FloatCommand.hpp"
-#include "game/gta/Scripts.hpp"
 
 namespace YimMenu::Features
 {
-	static const std::vector<std::pair<int, const char*>> g_ExplosionTypeArray = {
+	static constexpr std::pair<int, const char*> ExplosionTypeArray[] = {
 	    {static_cast<int>(ExplosionType::DONTCARE), "Don't Care"},
 	    {static_cast<int>(ExplosionType::GRENADE), "Grenade"},
 	    {static_cast<int>(ExplosionType::GRENADELAUNCHER), "Grenade Launcher"},
@@ -101,7 +101,8 @@ namespace YimMenu::Features
 	    "selectedexplosion",
 	    "Explosion Type",
 	    "Select an explosion type",
-	    g_ExplosionTypeArray,
+	    std::begin(ExplosionTypeArray),
+	    std::end(ExplosionTypeArray),
 	    static_cast<int>(ExplosionType::BULLET)};
 
 	static FloatCommand _ExplosionDamageScale{
@@ -125,40 +126,35 @@ namespace YimMenu::Features
 		using LoopedCommand::LoopedCommand;
 
 		void OnTick() override
+
+		void OnTick() override
 		{
 			TriggerExplosion();
 		}
 
 		void TriggerExplosion()
 		{
-			Hash weapon = WEAPON::GET_SELECTED_PED_WEAPON(Self::GetPed().GetHandle());
-
-			// Ensure ped is using a non-melee/non-explosive weapon AND that their not using melee of any kind before applying
-			if (WEAPON::IS_PED_ARMED(Self::GetPed().GetHandle(), 4) && !PED::IS_PED_PERFORMING_MELEE_ACTION(Self::GetPed().GetHandle()))
+			Vector3 impactCoords;
+			if (WEAPON::GET_PED_LAST_WEAPON_IMPACT_COORD(Self::GetPed().GetHandle(), &impactCoords))
 			{
-				Vector3 impactCoords;
-				if (WEAPON::GET_PED_LAST_WEAPON_IMPACT_COORD(Self::GetPed().GetHandle(), &impactCoords))
-				{
-					auto explosionType = static_cast<ExplosionType>(_SelectedExplosion.GetState());
-					float damageScale = _ExplosionDamageScale.GetState();
-					float shake = _CameraShake.GetState();
+				auto explosionType = static_cast<ExplosionType>(_SelectedExplosion.GetState());
+				float damageScale = _ExplosionDamageScale.GetState();
+				float shake = _CameraShake.GetState();
 
-					Scripts::RunWithSpoofedThreadName("am_mp_orbital_cannon"_J, [=] {
-						FIRE::ADD_OWNED_EXPLOSION(
-						    Self::GetPed().GetHandle(),
-						    impactCoords.x,
-						    impactCoords.y,
-						    impactCoords.z,
-						    static_cast<int>(explosionType),
-						    damageScale,
-						    true,  // isAudible
-						    false, // isInvisible
-						    shake);
-					});
-				}
+				FIRE::ADD_OWNED_EXPLOSION(
+				    Self::GetPed().GetHandle(),
+				    impactCoords.x,
+				    impactCoords.y,
+				    impactCoords.z,
+				    static_cast<int>(explosionType),
+				    damageScale,
+				    true,  // isAudible
+				    false, // isInvisible
+				    shake);
 			}
 		}
 	};
 
 	static ExplosiveAmmo _ExplosiveAmmo{"ExplosiveAmmo", "Explosive Ammo", "Every bullet you shoot explodes."};
 }
+
