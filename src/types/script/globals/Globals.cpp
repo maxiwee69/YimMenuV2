@@ -19,6 +19,7 @@
 #include "DailyObjectivesState.hpp"
 #include "WeeklyChallenge.hpp"
 #include "FreemodeDelivery.hpp"
+#include "LauncherServerData.hpp"
 #include "game/gta/ScriptGlobal.hpp"
 
 #define DEFINE_GLOBAL_ACCESSOR(str, global)       \
@@ -32,7 +33,7 @@
 
 DEFINE_GLOBAL_ACCESSOR(GlobalPlayerBD, 2658019);
 DEFINE_GLOBAL_ACCESSOR(GPBD_FM, 1845274);
-DEFINE_GLOBAL_ACCESSOR(GPBD_FM_2, 1845274);
+DEFINE_GLOBAL_ACCESSOR(GPBD_FM_2, 1882449);
 DEFINE_GLOBAL_ACCESSOR(GPBD_FM_3, 1888882);
 DEFINE_GLOBAL_ACCESSOR(GPBD_Flow, 1980192);
 DEFINE_GLOBAL_ACCESSOR(GPBD_Kicking, 1873852);
@@ -51,3 +52,4 @@ DEFINE_GLOBAL_ACCESSOR(FreemodeGeneral, 2740191);
 DEFINE_GLOBAL_ACCESSOR(DailyObjectivesState, 1574745);
 DEFINE_GLOBAL_ACCESSOR(WeeklyChallenge, 2739243);
 DEFINE_GLOBAL_ACCESSOR(FreemodeDelivery, 1953035);
+DEFINE_GLOBAL_ACCESSOR(LauncherServerData, 2699563);

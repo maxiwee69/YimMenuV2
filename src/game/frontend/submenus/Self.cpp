@@ -16,11 +16,12 @@ namespace YimMenu::Submenus
 		auto globalsGroup = std::make_shared<Group>("Globals");
 		auto movementGroup = std::make_shared<Group>("Movement");
 		auto toolsGroup = std::make_shared<Group>("Tools", 2);
+		auto specialAbilityGroup = std::make_shared<Group>("Special Ability");
 		auto wantedGroup = std::make_shared<Group>("Wanted");
 
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("godmode"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("invis"_J));
-		movementGroup->AddItem(std::make_shared<ConditionalItem>("invis"_J, std::make_shared<BoolCommandItem>("localvis"_J)));
+		globalsGroup->AddItem(std::make_shared<ConditionalItem>("invis"_J, std::make_shared<BoolCommandItem>("localvis"_J)));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("otr"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("noragdoll"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("noidlekick"_J));
@@ -28,6 +29,7 @@ namespace YimMenu::Submenus
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("formatmoney"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("mobileradio"_J));
 		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("keepplayerclean"_J));
+		globalsGroup->AddItem(std::make_shared<BoolCommandItem>("disablecriticalhits"_J));
        	globalsGroup->AddItem(std::make_shared<BoolCommandItem>("noparachutes"_J));
 		
 		toolsGroup->AddItem(std::make_shared<CommandItem>("skipcutscene"_J));
@@ -59,8 +61,15 @@ namespace YimMenu::Submenus
 		movementGroup->AddItem(std::make_shared<BoolCommandItem>("freecam"_J));
 		movementGroup->AddItem(std::make_shared<ConditionalItem>("freecam"_J, std::make_shared<FloatCommandItem>("freecamspeed"_J)));
 
+		specialAbilityGroup->AddItem(std::make_shared<BoolCommandItem>("infspecialability"_J));
+		auto specialInMp = std::make_shared<Group>("", 1);
+		specialInMp->AddItem(std::make_shared<BoolCommandItem>("mpspecialability"_J, "Enable in MP"));
+		specialInMp->AddItem(std::make_shared<ConditionalItem>("mpspecialability"_J, std::make_shared<ListCommandItem>("selspecialability"_J, "##specialselect")));
+		specialAbilityGroup->AddItem(std::move(specialInMp));
+
 		main->AddItem(globalsGroup);
 		main->AddItem(toolsGroup);
+		main->AddItem(specialAbilityGroup);
 		main->AddItem(wantedGroup);
 		main->AddItem(movementGroup);	
 		AddCategory(std::move(main));

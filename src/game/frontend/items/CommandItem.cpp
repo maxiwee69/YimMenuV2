@@ -3,6 +3,7 @@
 #include "core/commands/Command.hpp"
 #include "core/commands/HotkeySystem.hpp"
 #include "core/backend/FiberPool.hpp"
+#include "DrawHotkey.hpp"
 
 namespace YimMenu
 {
@@ -34,7 +35,7 @@ namespace YimMenu
 		if (ImGui::IsItemHovered())
 		{
 			ImGui::SetTooltip("%s", m_Command->GetDescription().data());
-			if (GetAsyncKeyState(VK_SHIFT) & 0x8000)
+			if (GetAsyncKeyState(VK_CAPITAL) & 0x8000)
 				ImGui::OpenPopup(std::format("{} Hotkey", m_Command->GetLabel()).data());
 		}
 
@@ -48,7 +49,7 @@ namespace YimMenu
 			HotkeySystem::SetBeingModifed(true);
 
 			if (auto it = g_HotkeySystem.m_CommandHotkeys.find(m_Command->GetHash()); it != g_HotkeySystem.m_CommandHotkeys.end())
-				g_HotkeySystem.CreateHotkey(it->second.m_Chain);
+				DrawHotkey(&it->second, m_Command->GetLabel());
 
 			ImGui::Spacing();
 			if (ImGui::Button("Close") || ((!ImGui::IsWindowHovered() && !ImGui::IsAnyItemHovered()) && ImGui::IsMouseClicked(ImGuiMouseButton_Left)))
