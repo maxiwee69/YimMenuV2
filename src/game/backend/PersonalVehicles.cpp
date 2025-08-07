@@ -439,11 +439,11 @@ namespace YimMenu
 
 	void PersonalVehicles::UpdateImpl()
 	{
-		const auto now = std::chrono::high_resolution_clock::now();
+		const auto now = std::chrono::steady_clock::now();
 		if (std::chrono::duration_cast<std::chrono::seconds>(now - m_LastUpdate) < 10s)
 			return;
 
-		m_LastUpdate = std::chrono::high_resolution_clock::now();
+		m_LastUpdate = std::chrono::steady_clock::now();
 
 		FiberPool::Push([] {
 			RegisterVehicles();

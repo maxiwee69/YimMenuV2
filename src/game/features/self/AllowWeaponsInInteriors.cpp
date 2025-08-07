@@ -12,17 +12,23 @@ namespace YimMenu::Features
 
 		virtual void OnTick() override
 		{
-			if (auto tunablePtr = Tunables::GetTunable(m_TunableHash).As<int*>())
+			if (auto tunable = Tunables::GetTunable(m_TunableHash))
 			{
-				*tunablePtr = 0; // Set to 0 to prevent kicking out with weapons
+				if (auto tunablePtr = tunable->As<int*>())
+				{
+					*tunablePtr = 0; // Set to 0 to prevent kicking out with weapons
+				}
 			}
 		}
 
 		virtual void OnDisable() override
 		{
-			if (auto tunablePtr = Tunables::GetTunable(m_TunableHash).As<int*>())
+			if (auto tunable = Tunables::GetTunable(m_TunableHash))
 			{
-				*tunablePtr = m_DefaultValue; // Restore default behavior
+				if (auto tunablePtr = tunable->As<int*>())
+				{
+					*tunablePtr = m_DefaultValue; // Restore default behavior
+				}
 			}
 		}
 	};

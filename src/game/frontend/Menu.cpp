@@ -17,6 +17,7 @@
 #include "submenus/Settings.hpp"
 #include "submenus/Debug.hpp"
 #include "submenus/World.hpp"
+#include "submenus/Enhancements.hpp"
 #include "core/filemgr/FileMgr.hpp"
 #include "core/memory/ModuleMgr.hpp"
 #include "Onboarding.hpp"
@@ -33,6 +34,7 @@ namespace YimMenu
 		UIManager::AddSubmenu(std::make_shared<Submenus::Players>());
 		UIManager::AddSubmenu(std::make_shared<Submenus::World>());
 		UIManager::AddSubmenu(std::make_shared<Submenus::Recovery>());
+		UIManager::AddSubmenu(std::make_shared<Submenus::Enhancements>());
 		UIManager::AddSubmenu(std::make_shared<Submenus::Settings>());
 		UIManager::AddSubmenu(std::make_shared<Submenus::Debug>());
 

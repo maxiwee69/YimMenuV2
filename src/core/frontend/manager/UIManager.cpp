@@ -55,18 +55,6 @@ namespace YimMenu
 			RenderClassicTheme(); // Default theme
 			break;
 		}
-				if (ImGui::BeginChild("##options", ImVec2(0, 0), true))
-				{
-					if (m_OptionsFont)
-						ImGui::PushFont(m_OptionsFont);
-					m_ActiveSubmenu->Draw();
-					if (m_OptionsFont)
-						ImGui::PopFont();
-				}
-				ImGui::EndChild();
-			}
-			ImGui::End();
-		}
 	}
 
 	std::shared_ptr<Submenu> UIManager::GetActiveSubmenuImpl()
