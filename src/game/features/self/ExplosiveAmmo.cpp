@@ -101,8 +101,7 @@ namespace YimMenu::Features
 	    "selectedexplosion",
 	    "Explosion Type",
 	    "Select an explosion type",
-	    std::begin(ExplosionTypeArray),
-	    std::end(ExplosionTypeArray),
+	    std::vector<std::pair<int, const char*>>(std::begin(ExplosionTypeArray), std::end(ExplosionTypeArray)),
 	    static_cast<int>(ExplosionType::BULLET)};
 
 	static FloatCommand _ExplosionDamageScale{
@@ -124,8 +123,6 @@ namespace YimMenu::Features
 	class ExplosiveAmmo : public LoopedCommand
 	{
 		using LoopedCommand::LoopedCommand;
-
-		void OnTick() override
 
 		void OnTick() override
 		{

@@ -44,11 +44,6 @@ namespace YimMenu::Submenus
 
 		AddCategory(std::move(main));
 		AddCategory(BuildSpawnVehicleMenu());
-<<<<<<< HEAD
-		AddCategory(BuildVehicleEditorMenu());
-		AddCategory(BuildSavedVehiclesMenu());
-=======
->>>>>>> ee4d26c (lsc stuff)
 		AddCategory(BuildLSCMenu());
 		AddCategory(BuildVehicleEditorMenu());
 		AddCategory(BuildSavedVehiclesMenu());
