@@ -255,6 +255,28 @@ struct SCRIPT_EVENT_COLLECT_COLLECTABLE : public SCRIPT_EVENT
         Yuanbao = 21,
         SmokeOnTheWater = 22
         };
+    {
+    enum class eCollectables
+        {
+        MovieProps = 0,
+        HiddenCaches = 1,
+        TresureChests = 2,
+        RadioStations = 3,
+        USBPirateRadio = 4,
+        Shipwrecked = 5,
+        BuriedStash = 6,
+        TrickOrTreat = 8,
+        LDOrganics = 9,
+        Skydives = 10,
+        Snowmen = 16,
+        DeadDrop = 17,
+        Tagging = 19,
+        SprayCans = 20,
+        Yuanbao = 21,
+        SmokeOnTheWater = 22,
+        GoldenClover = 23, // this is the first collectible to be daily but in-game time
+        LuckyClover = 24
+        };
 
     REGISTER_SCRIPT_EVENT(SCRIPT_EVENT_COLLECT_COLLECTABLE, CollectCollectable);
 
@@ -265,33 +287,33 @@ struct SCRIPT_EVENT_COLLECT_COLLECTABLE : public SCRIPT_EVENT
     SCR_INT DisplayNotification;
     };
 
-struct SET_SKYDIVE_COMPLETED : public SCRIPT_EVENT
-    {
-    REGISTER_SCRIPT_EVENT(SET_SKYDIVE_COMPLETED, SetSkydiveCompleted);
+    struct SET_SKYDIVE_COMPLETED : public SCRIPT_EVENT
+        {
+        REGISTER_SCRIPT_EVENT(SET_SKYDIVE_COMPLETED, SetSkydiveCompleted);
 
-    SCR_INT SkydiveIndex;
-    SCR_INT SkydiveLocation;
-    SCR_BOOL AllCheckpointsHit;
-    SCR_BOOL ParTimeBeaten;
-    SCR_BOOL AccurateLanding;
-    };
+        SCR_INT SkydiveIndex;
+        SCR_INT SkydiveLocation;
+        SCR_BOOL AllCheckpointsHit;
+        SCR_BOOL ParTimeBeaten;
+        SCR_BOOL AccurateLanding;
+        };
 
-// FPOM
-struct SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION : public SCRIPT_EVENT
-    {
-    REGISTER_SCRIPT_EVENT(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION, StartScriptBegin);
-    MP_SCRIPT_DATA ScriptData;
-    SCR_INT Flags;
-    SCR_INT ReplayProtectionValue;
-    SCR_INT PAD_0026;
-    };
-static_assert(sizeof(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION) == 27 * 8);
+    // FPOM
+    struct SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION : public SCRIPT_EVENT
+        {
+        REGISTER_SCRIPT_EVENT(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION, StartScriptBegin);
+        MP_SCRIPT_DATA ScriptData;
+        SCR_INT Flags;
+        SCR_INT ReplayProtectionValue;
+        SCR_INT PAD_0026;
+        };
+    static_assert(sizeof(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION) == 27 * 8);
 
-struct SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK : public SCRIPT_EVENT
-    {
-    REGISTER_SCRIPT_EVENT(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK, StartScriptProceed);
-    MP_SCRIPT_DATA ScriptData;
-    };
-static_assert(sizeof(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK) == 24 * 8);
+    struct SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK : public SCRIPT_EVENT
+        {
+        REGISTER_SCRIPT_EVENT(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK, StartScriptProceed);
+        MP_SCRIPT_DATA ScriptData;
+        };
+    static_assert(sizeof(SCRIPT_EVENT_FORCE_PLAYER_ON_MISSION_SERVER_ACK) == 24 * 8);
 
 #undef REGISTER_SCRIPT_EVENT
