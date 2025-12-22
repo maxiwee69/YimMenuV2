@@ -4,7 +4,30 @@
 
 namespace YimMenu
 {
-	static constexpr auto g_VehicleClassNames = std::to_array({"Compact",
+    static constexpr auto g_VehicleClassNames = std::to_array({"Compact", 
+        "Sedan", 
+        "SUV", 
+        "Coupe", 
+        "Muscle", 
+        "Sport Classic", 
+        "Sport", "Super", 
+        "Motorcycle", 
+        "Off-road", 
+        "Industrial", 
+        "Utility", 
+        "Van", 
+        "Cycle", 
+        "Boat", 
+        "Helicopter", 
+        "Plane", 
+        "Service", 
+        "Emergency", 
+        "Military", 
+        "Commercial", 
+        "Rail", 
+        "Open Wheel"});
+/*
+    static constexpr auto g_VehicleClassNames = std::to_array({"Compact",
 	    "Sedan",
 	    "SUV",
 	    "Coupe",
@@ -26,7 +49,8 @@ namespace YimMenu
 	    "Military",
 	    "Commercial",
 	    "Rail",
-	    "Open Wheel"});
+	    "Open Wheel"}); 
+*/
 
 		static constexpr auto g_VehicleHashes = std::to_array({
 	    "adder"_J,
@@ -935,6 +959,17 @@ namespace YimMenu
 	    "suzume"_J,
 	    "tampa4"_J,
 	    "woodlander"_J,
+	    "fmj2"_J,
+	    "sentinel6"_J,
+	    "xtreme"_J,
+	    "luiva"_J,
+        "itali2"_J,
+	    "gt750"_J,
+	    "vivanite2"_J,
+	    "driftrt3000"_J,
+	    "keitora"_J,
+        "driftkeitora"_J,
+	    "polbuffalo"_J,
 	});
 
 }
