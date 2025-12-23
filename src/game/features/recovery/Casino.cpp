@@ -7,6 +7,8 @@
 #include "game/backend/Tunables.hpp"
 
 #include <set>
+#include <ctime>
+#include <cstdlib>
 
 
 namespace YimMenu::Features
@@ -30,44 +32,9 @@ namespace YimMenu::Features
                     {
                     Scripts::ForceScriptHost(Scripts::FindScriptThread("casino_slots"_J));
                     }
-                virtual void OnTick() override
-                    {
-                    if (Scripts::SafeToModifyFreemodeBroadcastGlobals() && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH("casino_slots"_J))
-                        {
-                        Player casinoSlotsScriptHostPlayer = NETWORK::NETWORK_GET_HOST_OF_SCRIPT("casino_slots", -1, 0);
-                        auto casinoSlotsScriptHostPlayerId = casinoSlotsScriptHostPlayer.GetId();
-                        auto selfPlayerId = Self::GetPlayer().GetId();
-                        if (casinoSlotsScriptHostPlayerId != selfPlayerId)
-                            {
-                            Scripts::ForceScriptHost(Scripts::FindScriptThread("casino_slots"_J));
-                            }
-                        int* spin_state = ScriptLocal("casino_slots"_J, spin_state_var).As<int*>();
 
+                int* spin_state = ScriptLocal("casino_slots"_J, spin_state_var).As<int*>();
 
-                        bool needs_run = false;
-                        for (int slots_iter = 3; slots_iter <= 196; ++slots_iter)
-                            {
-                            if (!slots_blacklist.contains(slots_iter))
-                                {
-                                if (*ScriptLocal("casino_slots"_J, slots_random_results_table + slots_iter).As<int*>() != 6)
-                                    {
-                                    needs_run = true;
-                                    }
-                                }
-                            }
-                        if (needs_run)
-                            {
-                            for (int slots_iter = 3; slots_iter <= 196; ++slots_iter)
-                                {
-                                if (!slots_blacklist.contains(slots_iter))
-                                    {
-                                    int slot_result = 6;
-                                    *ScriptLocal("casino_slots"_J, slots_random_results_table + slots_iter).As<int*>() = slot_result;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 bool needs_run = false;
                 for (int slots_iter = 3; slots_iter <= 196; ++slots_iter)
                     {
@@ -79,6 +46,7 @@ namespace YimMenu::Features
                             }
                         }
                     }
+
                 if (needs_run && *spin_state >= 8 && *spin_state <= 15)
                     {
                     for (int slots_iter = 3; slots_iter <= 196; ++slots_iter)
