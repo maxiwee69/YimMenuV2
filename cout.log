@@ -1,0 +1,1198 @@
+[13:46:43.3183122][INFO/ExceptionHandler.cpp:21] ExceptionHandler initialized
+[13:46:43.4158369][INFO/main.cpp:38] Welcome to YimMenuV2! Build date: Dec 22 2025 at 19:21:25
+[13:46:43.4166685][DEBUG/Settings.cpp:43] All settings loaded
+[13:46:43.4211438][INFO/PatternScanner.cpp:82] Found pattern [IDXGISwapChain] : [0x7FF60C0E1897]
+[13:46:43.4928003][INFO/PatternScanner.cpp:82] Found pattern [RunScriptThreads] : [0x7FF60C9519DA]
+[13:46:43.5128516][INFO/PatternScanner.cpp:82] Found pattern [HWND] : [0x7FF60C53DB45]
+[13:46:43.5189729][INFO/PatternScanner.cpp:82] Found pattern [ScreenRes] : [0x7FF60C70743D]
+[13:46:43.5408968][INFO/PatternScanner.cpp:82] Found pattern [Version] : [0x7FF60C562DE0]
+[13:46:43.5424502][INFO/PatternScanner.cpp:82] Found pattern [InitNativeTables] : [0x7FF60C94CEAA]
+[13:46:43.5598416][INFO/PatternScanner.cpp:82] Found pattern [ScriptPrograms] : [0x7FF60C94CFF6]
+[13:46:43.6484678][INFO/PatternScanner.cpp:82] Found pattern [PedFactory] : [0x7FF60D0FC84B]
+[13:46:43.6498356][INFO/PatternScanner.cpp:82] Found pattern [GetNetPlayerFromPID] : [0x7FF60D3AFFE2]
+[13:46:43.6539303][INFO/PatternScanner.cpp:82] Found pattern [RegionCode] : [0x7FF60C75A42A]
+[13:46:43.6754778][INFO/PatternScanner.cpp:82] Found pattern [ShouldUseNodeCache&Nullsub] : [0x7FF60D450E85]
+[13:46:43.6895881][INFO/PatternScanner.cpp:82] Found pattern [ScriptGlobals] : [0x7FF60C94EC37]
+[13:46:43.7127767][INFO/PatternScanner.cpp:82] Found pattern [SendNetworkDamage] : [0x7FF60D394A01]
+[13:46:43.7603715][INFO/PatternScanner.cpp:82] Found pattern [NetworkPlayerMgrShutdown] : [0x7FF60D57F7AB]
+[13:46:43.7612684][INFO/PatternScanner.cpp:82] Found pattern [NetworkObjectMgr&GetSyncTreeForType] : [0x7FF60D39376A]
+[13:46:43.7691118][INFO/PatternScanner.cpp:82] Found pattern [IsSessionStarted] : [0x7FF60D05DC9F]
+[13:46:43.7796563][INFO/PatternScanner.cpp:82] Found pattern [GetNetObjectById] : [0x7FF60D7574D5]
+[13:46:43.7886406][INFO/PatternScanner.cpp:82] Found pattern [BEData] : [0x7FF60C07773C]
+[13:46:43.7974125][INFO/PatternScanner.cpp:82] Found pattern [IsNodeInScope] : [0x7FF60D5680E6]
+[13:46:43.7985920][INFO/PatternScanner.cpp:82] Found pattern [AssignPhysicalIndex] : [0x7FF60D44E733]
+[13:46:43.8026962][INFO/PatternScanner.cpp:82] Found pattern [ScriptVM] : [0x7FF60C94ECB4]
+[13:46:43.8300958][INFO/PatternScanner.cpp:82] Found pattern [SpectatePatch] : [0x7FF60D505948]
+[13:46:43.8419242][INFO/PatternScanner.cpp:82] Found pattern [MigrateObject] : [0x7FF60D04D214]
+[13:46:43.8680901][INFO/PatternScanner.cpp:82] Found pattern [WndProc] : [0x7FF60DF53B7F]
+[13:46:43.8681408][INFO/PatternScanner.cpp:82] Found pattern [PrepareMetricForSending] : [0x7FF60C738666]
+[13:46:43.8885555][INFO/PatternScanner.cpp:82] Found pattern [QueuePacket] : [0x7FF60D425C9A]
+[13:46:43.8978821][INFO/PatternScanner.cpp:82] Found pattern [ScriptThreads] : [0x7FF60D3E3806]
+[13:46:43.9050920][INFO/PatternScanner.cpp:82] Found pattern [ReceiveNetMessage] : [0x7FF60D1E17B1]
+[13:46:43.9159918][INFO/PatternScanner.cpp:82] Found pattern [WriteNodeData] : [0x7FF60D568080]
+[13:46:43.9352465][INFO/PatternScanner.cpp:82] Found pattern [QueueDependency&SigScanMemory] : [0x7FF60D269D0F]
+[13:46:43.9478705][INFO/PatternScanner.cpp:82] Found pattern [NetworkSession] : [0x7FF60C135B34]
+[13:46:43.9650857][INFO/PatternScanner.cpp:82] Found pattern [ObjectPool] : [0x7FF60C590E51]
+[13:46:43.9651317][INFO/PatternScanner.cpp:82] Found pattern [NetworkPlayerMgr] : [0x7FF60D425B04]
+[13:46:43.9965360][INFO/PatternScanner.cpp:82] Found pattern [SendEventAck] : [0x7FF60D433CCB]
+[13:46:44.0184395][INFO/PatternScanner.cpp:82] Found pattern [VehiclePool] : [0x7FF60CF35DC3]
+[13:46:44.0297764][INFO/PatternScanner.cpp:82] Found pattern [NetArrayCachedDataPatch] : [0x7FF60D42BCB9]
+[13:46:44.0328333][INFO/PatternScanner.cpp:82] Found pattern [NetEventMgr] : [0x7FF60D434D94]
+[13:46:44.0405477][INFO/PatternScanner.cpp:82] Found pattern [GetPackedStatData] : [0x7FF60D4D84AE]
+[13:46:44.0565819][INFO/PatternScanner.cpp:82] Found pattern [WriteNetArrayData] : [0x7FF60D42BA8E]
+[13:46:44.0595874][INFO/PatternScanner.cpp:82] Found pattern [ModelSpawnBypass] : [0x7FF60DCE9670]
+[13:46:44.1085409][INFO/PatternScanner.cpp:82] Found pattern [FormatIntCaller1] : [0x7FF60C57EE56]
+[13:46:44.1090390][INFO/PatternScanner.cpp:82] Found pattern [HandlesAndPtrs] : [0x7FF60E274F08]
+[13:46:44.1236216][INFO/PatternScanner.cpp:82] Found pattern [FormatIntCaller2] : [0x7FF60C57E9F2]
+[13:46:44.1427794][INFO/PatternScanner.cpp:82] Found pattern [NetCatalog&GetCatalogItem] : [0x7FF60D5D1355]
+[13:46:44.1434574][INFO/PatternScanner.cpp:82] Found pattern [GetAssistedAimTypePatch] : [0x7FF60CDD033C]
+[13:46:44.1472056][INFO/PatternScanner.cpp:82] Found pattern [PedPool] : [0x7FF60CE3B4F0]
+[13:46:44.1486156][INFO/PatternScanner.cpp:82] Found pattern [ShouldNotTargetEntityPatch] : [0x7FF60CDD3E43]
+[13:46:44.1900313][INFO/PatternScanner.cpp:82] Found pattern [AllowPausingInSessionPatch] : [0x7FF60C6007C8]
+[13:46:44.2097256][INFO/PatternScanner.cpp:82] Found pattern [ShouldAllowDriverLockOnPatch] : [0x7FF60CDCB88C]
+[13:46:44.2177496][INFO/PatternScanner.cpp:82] Found pattern [GetActiveBasket] : [0x7FF60D4DD6F9]
+[13:46:44.2179114][INFO/PatternScanner.cpp:82] Found pattern [GameSkeleton] : [0x7FF60C043337]
+[13:46:44.2198993][INFO/PatternScanner.cpp:82] Found pattern [WorldModelSpawnBypass] : [0x7FF60DD02761]
+[13:46:44.2204609][INFO/PatternScanner.cpp:82] Found pattern [TransactionMgr] : [0x7FF60D4DCE18]
+[13:46:44.2283408][INFO/PatternScanner.cpp:82] Found pattern [JoinSessionByInfo] : [0x7FF60D4A8A0A]
+[13:46:44.2291310][INFO/PatternScanner.cpp:82] Found pattern [GetAnticheatInitializedHash2] : [0x7FF60C0B8155]
+[13:46:44.2318505][INFO/PatternScanner.cpp:82] Found pattern [AnticheatInitializedHash&GetAnticheatInitializedHash] : [0x7FF60C0B71E8]
+[13:46:44.2364579][INFO/PatternScanner.cpp:82] Found pattern [GetSessionByGamerHandle] : [0x7FF60D2A5508]
+[13:46:44.2451996][INFO/PatternScanner.cpp:82] Found pattern [RequestControl] : [0x7FF60DCEA5E5]
+[13:46:44.2684277][INFO/PatternScanner.cpp:82] Found pattern [CStatsMgr] : [0x7FF60DC4E24B]
+[13:46:44.2842059][INFO/PatternScanner.cpp:82] Found pattern [WriteSyncTree] : [0x7FF60D4515C0]
+[13:46:44.2860576][INFO/PatternScanner.cpp:82] Found pattern [AbilityBarPatch] : [0x7FF60C580BDC]
+[13:46:44.2936179][INFO/PatternScanner.cpp:82] Found pattern [ScMembershipStuff] : [0x7FF60C794873]
+[13:46:44.3010922][INFO/PatternScanner.cpp:82] Found pattern [MatchmakingAdvertise] : [0x7FF60C725DAE]
+[13:46:44.3077665][INFO/PatternScanner.cpp:82] Found pattern [AssistedAimShouldReleaseEntity] : [0x7FF60CDD566F]
+[13:46:44.3094610][INFO/PatternScanner.cpp:82] Found pattern [MatchmakingUpdate] : [0x7FF60C728A55]
+[13:46:44.3174985][INFO/PatternScanner.cpp:82] Found pattern [GetPoolType] : [0x7FF60D4895F3]
+[13:46:44.3262587][INFO/PatternScanner.cpp:82] Found pattern [SessionDetailSendResponse] : [0x7FF60C72F7A9]
+[13:46:44.3276496][INFO/PatternScanner.cpp:82] Found pattern [MatchmakingUnadvertise] : [0x7FF60C728CD0]
+[13:46:44.3506028][INFO/PatternScanner.cpp:82] Found pattern [GameTimer] : [0x7FF60DB93A91]
+[13:46:44.3744442][INFO/PatternScanner.cpp:82] Found pattern [HttpStartRequest] : [0x7FF60D1EEA00]
+[13:46:44.3849984][INFO/PatternScanner.cpp:82] Found pattern [AssistedAimFindNewTarget] : [0x7FF60CDD4813]
+[13:46:44.3983003][INFO/PatternScanner.cpp:82] Found pattern [HandleJoinRequestIgnorePoolPatch] : [0x7FF60D4BD0E4]
+[13:46:44.4131470][INFO/PatternScanner.cpp:82] Found pattern [SetJoinRequestPoolTypePatch] : [0x7FF60D4AB152]
+[13:46:44.4421759][INFO/PatternScanner.cpp:82] Found pattern [GetLockOnPosPatch] : [0x7FF60DB89641]
+[13:46:44.4486225][INFO/PatternScanner.cpp:82] Found pattern [AnticheatContext] : [0x7FF60D269EC0]
+[13:46:44.4621200][INFO/PatternScanner.cpp:82] Found pattern [CStatsMpCharacterMappingData] : [0x7FF60D5FDA70]
+[13:46:44.5358227][INFO/PatternScanner.cpp:82] Found pattern [BattlEyeStatusUpdatePatch] : [0x7FF611870D98]
+[13:46:44.6852361][INFO/PatternScanner.cpp:82] Found pattern [BattlEyeServerProcessPlayerJoin] : [0x7FF61136F07B]
+[13:46:45.4309845][INFO/PatternScanner.cpp:82] Found pattern [NetworkTime] : [0x7FF6114FCF56]
+[13:46:45.4314317][INFO/Renderer.cpp:226] Using DX12, clear shader cache if you're having issues.
+[13:46:45.4319034][INFO/Renderer.cpp:214] DirectX 12 renderer has finished initializing.
+[13:46:45.4629622][INFO/main.cpp:63] ScriptMgr initialized
+[13:46:45.4707630][INFO/PatternScanner.cpp:82] Found pattern [GetAvatars] : [0x7FFFC00AB8FA]
+[13:46:45.4716357][INFO/PatternScanner.cpp:82] Found pattern [ReadAttributesPatch] : [0x7FFFC01BF6FC]
+[13:46:45.4726504][INFO/PatternScanner.cpp:82] Found pattern [ReadAttributesPatch2] : [0x7FFFC01BF76E]
+[13:46:45.4749705][INFO/PatternScanner.cpp:82] Found pattern [NumHandlesPatch] : [0x7FFFC01BE1B5]
+[13:46:45.5006541][INFO/PatternScanner.cpp:82] Found pattern [GetPresenceAttributes] : [0x7FFFC01A1DB4]
+[13:47:02.6134777][DEBUG/AnticheatBypass.cpp:80] DefuseSigscanner: Patched out the sigscanner
+[13:47:02.6137806][DEBUG/AnticheatBypass.cpp:120] Anticheat bypass mode: Vanilla
+[13:47:02.6460166][INFO/Tunables.cpp:196] Loaded 36440 tunables from cache.
+[13:47:02.8042790][INFO/ScriptPointer.cpp:60] Found pattern for ShopPatch at 0xE2A7F in script shop_controller
+[13:47:08.8030604][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping modules:
+GTA5_Enhanced.exe Base Address: 0x7FF60C040000 Size: 94516224
+ntdll.dll Base Address: 0x7FF84A9C0000 Size: 1515520
+KERNEL32.DLL Base Address: 0x7FF8499C0000 Size: 548864
+KERNELBASE.dll Base Address: 0x7FF847D10000 Size: 1724416
+USER32.dll Base Address: 0x7FF849B30000 Size: 692224
+win32u.dll Base Address: 0x7FF848730000 Size: 49152
+GDI32.dll Base Address: 0x7FF84A2E0000 Size: 61440
+gdi32full.dll Base Address: 0x7FF848290000 Size: 741376
+msvcp_win.dll Base Address: 0x7FF8483C0000 Size: 335872
+ucrtbase.dll Base Address: 0x7FF8485E0000 Size: 1011712
+SHELL32.dll Base Address: 0x7FF8491D0000 Size: 5947392
+wintypes.dll Base Address: 0x7FF847B10000 Size: 667648
+combase.dll Base Address: 0x7FF849D00000 Size: 2555904
+RPCRT4.dll Base Address: 0x7FF84A420000 Size: 901120
+ADVAPI32.dll Base Address: 0x7FF84A8C0000 Size: 450560
+msvcrt.dll Base Address: 0x7FF84A090000 Size: 516096
+sechost.dll Base Address: 0x7FF84A700000 Size: 454656
+OLEAUT32.dll Base Address: 0x7FF84A540000 Size: 651264
+ole32.dll Base Address: 0x7FF848760000 Size: 880640
+DSTORAGE.dll Base Address: 0x7FFFEDA20000 Size: 127488
+CRYPT32.dll Base Address: 0x7FF848110000 Size: 1204224
+WS2_32.dll Base Address: 0x7FF84A140000 Size: 311296
+PSAPI.DLL Base Address: 0x7FF84A7B0000 Size: 4096
+IMM32.dll Base Address: 0x7FF849190000 Size: 126976
+WINTRUST.dll Base Address: 0x7FF847C80000 Size: 372736
+MSVCP140.dll Base Address: 0x7FF839E20000 Size: 324096
+shcore.dll Base Address: 0x7FF84A7C0000 Size: 630784
+PROPSYS.dll Base Address: 0x7FF842700000 Size: 704512
+MFReadWrite.dll Base Address: 0x7FF830BA0000 Size: 704512
+MFPlat.DLL Base Address: 0x7FF826D80000 Size: 1802240
+imagehlp.dll Base Address: 0x7FF849A90000 Size: 53248
+VERSION.dll Base Address: 0x7FF839790000 Size: 16384
+WINMM.dll Base Address: 0x7FF8422A0000 Size: 118784
+MF.dll Base Address: 0x7FF825F80000 Size: 417792
+SETUPAPI.dll Base Address: 0x7FF848CE0000 Size: 970752
+POWRPROF.dll Base Address: 0x7FF8476B0000 Size: 81920
+XINPUT1_4.dll Base Address: 0x7FF82EE50000 Size: 73728
+bink2w64.dll Base Address: 0x7FFFC69F0000 Size: 256512
+bcrypt.dll Base Address: 0x7FF847A00000 Size: 118784
+DSOUND.dll Base Address: 0x7FFFC6090000 Size: 442368
+WININET.dll Base Address: 0x7FF836000000 Size: 2056192
+CFGMGR32.dll Base Address: 0x7FF8477A0000 Size: 253952
+VCRUNTIME140.dll Base Address: 0x7FF83A5D0000 Size: 77824
+VCRUNTIME140_1.dll Base Address: 0x7FF839E10000 Size: 15360
+IPHLPAPI.DLL Base Address: 0x7FF846260000 Size: 147456
+oo2core_5_win64.dll Base Address: 0x7FFFA0060000 Size: 739840
+HID.DLL Base Address: 0x7FF845F50000 Size: 28672
+msdmo.dll Base Address: 0x7FF844720000 Size: 24576
+DEVOBJ.dll Base Address: 0x7FF847720000 Size: 118784
+ResampleDmo.DLL Base Address: 0x7FF82CF00000 Size: 503808
+winmmbase.dll Base Address: 0x7FF82FB20000 Size: 139264
+MFCORE.DLL Base Address: 0x7FFFC4370000 Size: 3518464
+bcryptPrimitives.dll Base Address: 0x7FF848530000 Size: 520192
+RTWorkQ.DLL Base Address: 0x7FF830080000 Size: 131072
+UMPDC.dll Base Address: 0x7FF847660000 Size: 40960
+MSASN1.dll Base Address: 0x7FF8471A0000 Size: 45056
+inputhost.dll Base Address: 0x7FF828FB0000 Size: 1400832
+CoreMessaging.dll Base Address: 0x7FF8443C0000 Size: 864256
+CRYPTBASE.DLL Base Address: 0x7FF847020000 Size: 12288
+kernel.appcore.dll Base Address: 0x7FF846880000 Size: 45056
+Windows.Storage.dll Base Address: 0x7FF8456E0000 Size: 6610944
+shlwapi.dll Base Address: 0x7FF849AC0000 Size: 241664
+apphelp.dll Base Address: 0x7FF8447A0000 Size: 368640
+clbcatq.dll Base Address: 0x7FF84A220000 Size: 466944
+uxtheme.dll Base Address: 0x7FF8448C0000 Size: 434176
+profapi.dll Base Address: 0x7FF847A30000 Size: 102400
+wmiutils.dll Base Address: 0x7FF839100000 Size: 73728
+wbemcomn.dll Base Address: 0x7FF83C190000 Size: 299008
+DStorageCore.dll Base Address: 0x7FFF9F270000 Size: 369152
+dxgi.dll Base Address: 0x7FF8449F0000 Size: 847872
+d3d12.dll Base Address: 0x7FFFFFB30000 Size: 86016
+dbghelp.dll Base Address: 0x7FF844D70000 Size: 1683456
+dbgcore.DLL Base Address: 0x7FF836C90000 Size: 163840
+D3D12Core.dll Base Address: 0x7FFFEDEF0000 Size: 2416640
+dxcore.dll Base Address: 0x7FF8449A0000 Size: 180224
+directxdatabasehelper.dll Base Address: 0x7FF841CF0000 Size: 274432
+D3DSCache.dll Base Address: 0x7FFFED8B0000 Size: 733184
+USERENV.dll Base Address: 0x7FF846E80000 Size: 98304
+amsi.dll Base Address: 0x7FF8390E0000 Size: 57344
+MpOav.dll Base Address: 0x7FF8386F0000 Size: 303104
+CRYPTSP.dll Base Address: 0x7FF847140000 Size: 57344
+rsaenh.dll Base Address: 0x7FF8467E0000 Size: 163840
+gpapi.dll Base Address: 0x7FF846E40000 Size: 118784
+cryptnet.dll Base Address: 0x7FF82DB30000 Size: 172032
+WINNSI.DLL Base Address: 0x7FF842A30000 Size: 20480
+NSI.dll Base Address: 0x7FF84A620000 Size: 12288
+sl.interposer.dll Base Address: 0x7FFFC6000000 Size: 393216
+drvstore.dll Base Address: 0x7FF833CF0000 Size: 1138688
+wldp.dll Base Address: 0x7FF8470C0000 Size: 286720
+sl.common.dll Base Address: 0x7FFF9E100000 Size: 476672
+sl.pcl.dll Base Address: 0x7FF8202B0000 Size: 116736
+sl.reflex.dll Base Address: 0x7FFFC61A0000 Size: 136704
+amd_ags_x64.DLL Base Address: 0x7FFFED9F0000 Size: 103936
+atiadlxx.dll Base Address: 0x7FF838BC0000 Size: 1695744
+WTSAPI32.dll Base Address: 0x7FF844860000 Size: 106496
+SspiCli.dll Base Address: 0x7FF846B20000 Size: 147456
+pdh.dll Base Address: 0x7FF833130000 Size: 274432
+MSCTF.dll Base Address: 0x7FF848B70000 Size: 1138688
+textinputframework.dll Base Address: 0x7FF829E70000 Size: 1024000
+amdxc64.dll Base Address: 0x7FFFD1300000 Size: 26056704
+amdihk64.dll Base Address: 0x7FF83C070000 Size: 143872
+CoreUIComponents.dll Base Address: 0x7FF840A70000 Size: 1687552
+amdcc.dll Base Address: 0x7FFF9DCD0000 Size: 195584
+amd_comgr_2.dll Base Address: 0x7FFF85AA0000 Size: 76398592
+dcomp.dll Base Address: 0x7FF8440D0000 Size: 1654784
+Microsoft.Internal.WarpPal.dll Base Address: 0x7FF843E20000 Size: 65536
+dwmapi.dll Base Address: 0x7FF844B50000 Size: 106496
+amdxcffx64.dll Base Address: 0x7FFF97E00000 Size: 1167872
+MMDevApi.dll Base Address: 0x7FF83CEE0000 Size: 454656
+AUDIOSES.DLL Base Address: 0x7FF830590000 Size: 1212416
+Windows.Perception.Stub.dll Base Address: 0x7FF825CB0000 Size: 299008
+resourcepolicyclient.dll Base Address: 0x7FF8451F0000 Size: 36864
+Windows.System.Launcher.dll Base Address: 0x7FF829CF0000 Size: 1134592
+windows.staterepositorycore.dll Base Address: 0x7FF836C20000 Size: 57344
+napinsp.dll Base Address: 0x7FF833200000 Size: 57344
+mswsock.dll Base Address: 0x7FF846DD0000 Size: 339968
+DNSAPI.dll Base Address: 0x7FF846350000 Size: 909312
+winrnr.dll Base Address: 0x7FF830CE0000 Size: 40960
+nlansp_c.dll Base Address: 0x7FF81D230000 Size: 86016
+wshbth.dll Base Address: 0x7FF83C780000 Size: 49152
+fwpuclnt.dll Base Address: 0x7FF83C250000 Size: 303104
+rasadhlp.dll Base Address: 0x7FF83C770000 Size: 12288
+Windows.UI.dll Base Address: 0x7FF82C390000 Size: 847872
+avrt.dll Base Address: 0x7FF8411C0000 Size: 8192
+DPAPI.dll Base Address: 0x7FF847800000 Size: 8192
+socialclub.dll Base Address: 0x7FFFBFFE0000 Size: 3430912
+UIAutomationCore.DLL Base Address: 0x7FF820B70000 Size: 2998272
+netprofm.dll Base Address: 0x7FF8419A0000 Size: 290816
+SocialClubD3D12Renderer.dll Base Address: 0x7FFFE7EB0000 Size: 107008
+wdmaud.drv Base Address: 0x7FF825DD0000 Size: 200704
+msacm32.drv Base Address: 0x7FF825DB0000 Size: 24576
+MSACM32.dll Base Address: 0x7FF825D80000 Size: 81920
+midimap.dll Base Address: 0x7FF836B40000 Size: 20480
+amd_fidelityfx_dx12.dll Base Address: 0x7FFF9BC20000 Size: 211968
+FirewallAPI.dll Base Address: 0x7FF846100000 Size: 421888
+fwbase.dll Base Address: 0x7FF846070000 Size: 208896
+FWPolicyIOMgr.dll Base Address: 0x7FF836BB0000 Size: 270336
+npmproxy.dll Base Address: 0x7FF83C0B0000 Size: 36864
+dinput8.DLL Base Address: 0x7FF82D3E0000 Size: 192512
+dhcpcsvc6.DLL Base Address: 0x7FF83D010000 Size: 40960
+dhcpcsvc.DLL Base Address: 0x7FF83CA80000 Size: 81920
+wbemprox.dll Base Address: 0x7FF83A6E0000 Size: 36864
+wbemsvc.dll Base Address: 0x7FF839240000 Size: 12288
+fastprox.dll Base Address: 0x7FF8392F0000 Size: 704512
+YimMenuV2.dll Base Address: 0x7FFF9B540000 Size: 3629568
+D3DCOMPILER_47.dll Base Address: 0x7FF842A50000 Size: 3534848
+Dumping registers:
+RAX: 0x1
+RCX: 0x0
+RDX: 0x1
+RBX: 0x0
+RSI: 0x0
+RDI: 0x3
+RSP: 0x6E862FF680
+RBP: 0x7FF844AC1FF0
+R8:  0x23470AF5640
+R9:  0xFFFFFFFF00000000
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E669D2)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A912)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[13]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8073896][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x0
+RBX: 0x0
+RSI: 0x0
+RDI: 0x3
+RSP: 0x6E862FF680
+RBP: 0x7FF844AC1FF0
+R8:  0x6E862FF6AC
+R9:  0xFFFFFFFF00000000
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E669DC)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A912)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[13]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x128
+
+--------End of exception--------
+
+[13:47:08.8079150][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x7FF6105BF348
+RBX: 0x0
+RSI: 0x7FF60FE6DC48
+RDI: 0x3
+RSP: 0x6E862FF670
+RBP: 0x7FF844AC1FF0
+R8:  0x6E862FF6AC
+R9:  0xFFFFFFFF00000000
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E66A5C)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A929)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[13]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8084007][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x0
+RBX: 0x0
+RSI: 0x7FF60FE6DC48
+RDI: 0x3
+RSP: 0x6E862FF670
+RBP: 0x7FF844AC1FF0
+R8:  0x0
+R9:  0x0
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E66A67)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A929)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[13]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x140
+
+--------End of exception--------
+
+[13:47:08.8088678][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x0
+RBX: 0x0
+RSI: 0x7FF60FE6DC48
+RDI: 0x3
+RSP: 0x6E862FF6C0
+RBP: 0x7FF844AC1FF0
+R8:  0x0
+R9:  0x0
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A930)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8092704][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x0
+RBX: 0x0
+RSI: 0x7FF60FE6DC48
+RDI: 0x3
+RSP: 0x6E862FF6C0
+RBP: 0x7FF844AC1FF0
+R8:  0x0
+R9:  0x0
+R10: 0x23470AF0000
+R11: 0x6E862FF6A0
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4A933)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x48F988)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AA8)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x120
+
+--------End of exception--------
+
+[13:47:08.8097728][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6E862FF720
+RCX: 0x0
+RDX: 0x6E862FF38F
+RBX: 0x28
+RSI: 0x0
+RDI: 0x6E862FF7B0
+RSP: 0x6E862FF6A0
+RBP: 0x0
+R8:  0x0
+R9:  0x7FF60E87C9D5
+R10: 0x7FF8485E0000
+R11: 0x30
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4FF78)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8102313][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x0
+RBX: 0x28
+RSI: 0x0
+RDI: 0x6E862FF7B0
+RSP: 0x6E862FF6A0
+RBP: 0x0
+R8:  0x7FF60E788AB0
+R9:  0x6E862FF6E8
+R10: 0x7FF8485E0000
+R11: 0x30
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4FF89)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x48
+
+--------End of exception--------
+
+[13:47:08.8108232][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6C8B4840245C8B48
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x7FFF9BC212D0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x6E862FF520
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FB3)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0xFFFFFFFFFFFFFFFF
+
+--------End of exception--------
+
+[13:47:08.8114910][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x7FFF9BC212D0
+RDI: 0x0
+RSP: 0x6E862FF208
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x6E862FF520
+Dumping stacktrace:
+Attempted to execute at 0x0
+
+--------End of exception--------
+
+[13:47:08.8116357][ERROR/ExceptionHandler.cpp:61] Force returning from function
+[13:47:08.8120237][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x6E862FF520
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FBE)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8128790][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x6E862FF520
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FC1)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x10
+
+--------End of exception--------
+
+[13:47:08.8134652][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x0
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FCD)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x20
+
+--------End of exception--------
+
+[13:47:08.8140127][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x0
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x0
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FDA)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x30
+
+--------End of exception--------
+
+[13:47:08.8147625][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6C8B4840245C8B48
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x23443ED6F90
+RDI: 0x6E862FF550
+RSP: 0x6E862FF330
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x6E862FF420
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+[0]	D3D12Core.dll+0x20540 0x7FFFEDF10540
+[1]	D3D12Core.dll+0x44781 0x7FFFEDF34781
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5C3ED)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182A28)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF5E)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0xFFFFFFFFFFFFFFFF
+
+--------End of exception--------
+
+[13:47:08.8153279][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x23443ED6F90
+RDI: 0x6E862FF550
+RSP: 0x6E862FF328
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x6E862FF420
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+Attempted to execute at 0x0
+
+--------End of exception--------
+
+[13:47:08.8154954][ERROR/ExceptionHandler.cpp:61] Force returning from function
+[13:47:08.8158758][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x23443ED6F90
+RDI: 0x6E862FF550
+RSP: 0x6E862FF330
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x6E862FF420
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+[0]	D3D12Core.dll+0x20549 0x7FFFEDF10549
+[1]	D3D12Core.dll+0x44781 0x7FFFEDF34781
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5C3ED)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182A28)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF5E)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8165443][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x23443ED6F90
+RDI: 0x6E862FF550
+RSP: 0x6E862FF330
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x6E862FF420
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+[0]	D3D12Core.dll+0x2054C 0x7FFFEDF1054C
+[1]	D3D12Core.dll+0x44781 0x7FFFEDF34781
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5C3ED)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182A28)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF5E)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x10
+
+--------End of exception--------
+
+[13:47:08.8171467][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x57
+RDI: 0x6E862FF550
+RSP: 0x6E862FF330
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x6E862FF420
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+[0]	D3D12Core.dll+0x20557 0x7FFFEDF10557
+[1]	D3D12Core.dll+0x44781 0x7FFFEDF34781
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5C3ED)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182A28)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF5E)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x20
+
+--------End of exception--------
+
+[13:47:08.8177207][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF408
+RBX: 0x0
+RSI: 0x57
+RDI: 0x6E862FF550
+RSP: 0x6E862FF330
+RBP: 0x6E862FF430
+R8:  0x7FFF9BC212D0
+R9:  0x1
+R10: 0x6E862FF550
+R11: 0x0
+R12: 0x0
+R13: 0x6E862FF720
+R14: 0x7FFF9BC212D0
+R15: 0x6E862FF648
+Dumping stacktrace:
+[0]	D3D12Core.dll+0x20564 0x7FFFEDF10564
+[1]	D3D12Core.dll+0x44781 0x7FFFEDF34781
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5C3ED)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182A28)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF5E)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x30
+
+--------End of exception--------
+
+[13:47:08.8182398][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6C8B4840245C8B48
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF5C0
+RBX: 0x6E862FF720
+RSI: 0x0
+RDI: 0x7FFF9BC212D0
+RSP: 0x6E862FF5A0
+RBP: 0x6E862FF680
+R8:  0x7EFEFEFEFEFEFEFF
+R9:  0x7EFF282F43313031
+R10: 0x7FF8485E0000
+R11: 0x8101010101010100
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50144)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5003C)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[13]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0xFFFFFFFFFFFFFFFF
+
+--------End of exception--------
+
+[13:47:08.8186946][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6E862FF720
+RCX: 0x0
+RDX: 0x6E862FF38F
+RBX: 0x28
+RSI: 0x1
+RDI: 0x6E862FF7B0
+RSP: 0x6E862FF6A0
+RBP: 0x1
+R8:  0x0
+R9:  0x7FF60E87C9D5
+R10: 0x7FF8485E0000
+R11: 0x30
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4FF78)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x0
+
+--------End of exception--------
+
+[13:47:08.8191368][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x0
+RCX: 0x0
+RDX: 0x1
+RBX: 0x28
+RSI: 0x1
+RDI: 0x6E862FF7B0
+RSP: 0x6E862FF6A0
+RBP: 0x1
+R8:  0x7FF60E788AB0
+R9:  0x6E862FF6E8
+R10: 0x7FF8485E0000
+R11: 0x30
+R12: 0x0
+R13: 0x0
+R14: 0x0
+R15: 0x1
+Dumping stacktrace:
+[0]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E4FF89)
+[1]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[12]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[13]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[14]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0x48
+
+--------End of exception--------
+
+[13:47:08.8197608][ERROR/ExceptionHandler.cpp:45] EXCEPTION_ACCESS_VIOLATION
+Dumping registers:
+RAX: 0x6C8B4840245C8B48
+RCX: 0x7FFF9BC212D0
+RDX: 0x6E862FF300
+RBX: 0x0
+RSI: 0x7FFF9BC212D0
+RDI: 0x0
+RSP: 0x6E862FF210
+RBP: 0x6E862FF310
+R8:  0x7FFF9BC212D0
+R9:  0x57
+R10: 0x7FFFEDEF0000
+R11: 0x6E862FF460
+R12: 0x80070057
+R13: 0x7FFF9BC212D0
+R14: 0x6E862FF460
+R15: 0x6E862FF520
+Dumping stacktrace:
+[0]	D3D12Core.dll D3D12GetInterface (D3D12Core.dll+0x89FB3)
+[1]	D3D12Core.dll+0x2D699 0x7FFFEDF1D699
+[2]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5BF98)
+[3]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1182414)
+[4]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xEF2D)
+[5]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E5001C)
+[6]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1E50204)
+[7]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324AC2)
+[8]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x324424)
+[9]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x917E68)
+[10]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2797)
+[11]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x2504)
+[12]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x14CCB0)
+[13]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1F80)
+[14]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0xF9E5E)
+[15]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x1956)
+[16]	GTA5_Enhanced.exe Ordinal0 (GTA5_Enhanced.exe+0x12F6AE)
+[17]	KERNEL32.DLL BaseThreadInitThunk (KERNEL32.DLL+0x2E8D7)
+[18]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+[19]	ntdll.dll RtlUserThreadStart (ntdll.dll+0x8C53C)
+Attempted to read from 0xFFFFFFFFFFFFFFFF
+
+--------End of exception--------
+
+[13:47:08.8204631][ERROR/ExceptionHandler.cpp:61] Force returning from function
+[13:47:08.8226069][ERROR/ExceptionHandler.cpp:61] Force returning from function
+[13:47:08.8255880][ERROR/ExceptionHandler.cpp:61] Force returning from function
+[13:47:08.8276590][ERROR/ExceptionHandler.cpp:61] Force returning from function
